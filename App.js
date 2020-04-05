@@ -7,7 +7,7 @@
  */
 
 import React, {useState} from 'react';
-import { ScrollView } from 'react-native';
+import {ScrollView, Button, TouchableOpacity} from 'react-native';
 import {Text, View, Image, TextInput} from 'react-native-tailwind';
 
 const App: () => React$Node = () => {
@@ -18,47 +18,45 @@ const App: () => React$Node = () => {
       <View className="flex-1 bg-white">
         {/* main content */}
         <View className="flex-1 py-4">
-
           <ScrollView>
-
             {/*  search bar */}
             <View className="flex flex-row h-12 mb-4 px-4">
               <View className="flex-1 rounded-full border-2 border-gray-400  bg-white flex-row items-center">
                 <Image
-                    className="w-8 h-8 mx-2"
-                    source={require('./icons/search.png')}
+                  className="w-8 h-8 mx-2"
+                  source={require('./icons/search.png')}
                 />
                 <TextInput
-                    placeholder="What do you want to eat ?"
-                    className="p-2"
+                  placeholder="What do you want to eat ?"
+                  className="p-2"
                 />
               </View>
               <View className="w-12 h-12 ml-4 flex item-center justify-center">
                 <Image
-                    className="w-10 h-10"
-                    source={require('./icons/promo.png')}
+                  className="w-10 h-10"
+                  source={require('./icons/promo.png')}
                 />
               </View>
             </View>
 
             {/* gopay */}
             <View
-                className="flex flex-col rounded-lg border mb-4 px-4"
-                style={{borderColor: 'transparent'}}>
+              className="flex flex-col rounded-lg border mb-4 px-4"
+              style={{borderColor: 'transparent'}}>
               <View
-                  className="p-4 w-full flex justify-between flex-row"
-                  style={{backgroundColor: '#2261c4'}}>
+                className="p-4 w-full flex justify-between flex-row"
+                style={{backgroundColor: '#2261c4'}}>
                 <Image className="" source={require('./icons/gopay.png')} />
                 <Text className="text-white font-bold text-lg">Rp. 50.000</Text>
               </View>
               <View
-                  className="flex flex-row justify-around py-4"
-                  style={{backgroundColor: '#205dc0'}}>
+                className="flex flex-row justify-around py-4"
+                style={{backgroundColor: '#205dc0'}}>
                 <View className="h-16 w-1/4 flex items-center justify-center">
                   <View className="w-8 h-8 m-1">
                     <Image
-                        className="w-8 h-8"
-                        source={require(`./icons/pay.png`)}
+                      className="w-8 h-8"
+                      source={require(`./icons/pay.png`)}
                     />
                   </View>
                   <Text className="text-white text-xs">Pay</Text>
@@ -66,8 +64,8 @@ const App: () => React$Node = () => {
                 <View className="h-16 w-1/4 flex items-center justify-center">
                   <View className="w-8 h-8 m-1">
                     <Image
-                        className="w-8 h-8"
-                        source={require(`./icons/nearby.png`)}
+                      className="w-8 h-8"
+                      source={require(`./icons/nearby.png`)}
                     />
                   </View>
                   <Text className="text-white text-xs">Nearby</Text>
@@ -75,8 +73,8 @@ const App: () => React$Node = () => {
                 <View className="h-16 w-1/4 flex items-center justify-center relative">
                   <View className="w-8 h-8 m-1">
                     <Image
-                        className="w-8 h-8"
-                        source={require(`./icons/topup.png`)}
+                      className="w-8 h-8"
+                      source={require(`./icons/topup.png`)}
                     />
                   </View>
                   <Text className="text-white text-xs">Top Up</Text>
@@ -84,8 +82,8 @@ const App: () => React$Node = () => {
                 <View className="h-16 w-1/4 flex items-center justify-center">
                   <View className="w-8 h-8 m-1">
                     <Image
-                        className="w-8 h-8"
-                        source={require(`./icons/more.png`)}
+                      className="w-8 h-8"
+                      source={require(`./icons/more.png`)}
                     />
                   </View>
                   <Text className="text-white text-xs">More</Text>
@@ -98,8 +96,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-ride.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-ride.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO RIDE</Text>
@@ -107,8 +105,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-car.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-car.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO CAR</Text>
@@ -116,8 +114,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-bluebird.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-bluebird.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO BLUEBIRD</Text>
@@ -125,8 +123,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-send.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-send.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO SEND</Text>
@@ -136,8 +134,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-deals.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-deals.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO DEALS</Text>
@@ -145,8 +143,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-pulsa.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-pulsa.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO PULSA</Text>
@@ -154,8 +152,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-food.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-food.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">GO FOOD</Text>
@@ -163,8 +161,8 @@ const App: () => React$Node = () => {
               <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
-                      className="w-8 h-8"
-                      source={require(`./icons/go-more.png`)}
+                    className="w-8 h-8"
+                    source={require(`./icons/go-more.png`)}
                   />
                 </View>
                 <Text className="text-black text-xs">MORE</Text>
@@ -172,28 +170,36 @@ const App: () => React$Node = () => {
             </View>
 
             {/* go news */}
-            <View className="h-2 bg-gray-300"></View>
+            <View className="h-2 bg-gray-300" />
 
-            <View className="p-4">
-              <Image
-                  className="h-48 w-full bg-contain"
-                  source={require(`./dummy/sepak-bola.jpg`)}
-              />
+            <View className="p-4 mb-4">
+              <View className="w-full mb-4 realtive">
+                  <Image
+                      className="h-48 w-full bg-contain "
+                      source={require(`./dummy/sepak-bola.jpg`)}
+                  />
+                  <View className="w-full h-full absolute l-0 t-0 bg-black opacity-50"></View>
+              </View>
+              <Text className="font-bold text-gray-800 mb-2 text-lg">GO NEWS</Text>
+            <Text className="text-gray-600 mb-2 leading-8">Dimas Drajat selamatkan pilanlti, Timnas U23 kalahkan Brunei</Text>
+            <TouchableOpacity>
+                <View className="bg-green-500 px-4 py-2 rounded-lg flex-end self-end">
+                    <Text className="text-white font-bold text-sm">READ</Text>
+                </View>
+            </TouchableOpacity>
+                <View className="bg-gray-200 mt-4 h-px" />
 
-              <View className="absolute t-0 l-0 ml-6 mt-6">
+
+                <View className="absolute t-0 l-0 ml-8 mt-8">
                 <Image
-                    style={{ width: 100, height: 29.5 }}
-                    className="bg-cover"
-                    source={require(`./logo/white.png`)}
-
+                  style={{width: 100, height: 29.5}}
+                  className="bg-cover"
+                  source={require(`./logo/white.png`)}
                 />
               </View>
             </View>
-
           </ScrollView>
-
         </View>
-
 
         {/* bottom navigation */}
         <View className="h-16 bg-white flex flex-row">
