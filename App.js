@@ -39,7 +39,7 @@ const App: () => React$Node = () => {
 
           {/* gopay */}
           <View
-            className="flex flex-col rounded-lg border-2"
+            className="flex flex-col rounded-lg border-2 mb-4"
             style={{borderColor: '#205dc0'}}>
             <View
               className="p-4 w-full flex justify-between flex-row"
@@ -50,7 +50,7 @@ const App: () => React$Node = () => {
             <View
               className="flex flex-row justify-around py-4"
               style={{backgroundColor: '#205dc0'}}>
-              <View className="h-16 w-16 flex items-center justify-center">
+              <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
                     className="w-8 h-8"
@@ -59,7 +59,7 @@ const App: () => React$Node = () => {
                 </View>
                 <Text className="text-white text-xs">Pay</Text>
               </View>
-              <View className="h-16 w-16 flex items-center justify-center">
+              <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
                     className="w-8 h-8"
@@ -68,7 +68,7 @@ const App: () => React$Node = () => {
                 </View>
                 <Text className="text-white text-xs">Nearby</Text>
               </View>
-              <View className="h-16 w-16 flex items-center justify-center relative">
+              <View className="h-16 w-1/4 flex items-center justify-center relative">
                 <View className="w-8 h-8 m-1">
                   <Image
                     className="w-8 h-8"
@@ -77,7 +77,7 @@ const App: () => React$Node = () => {
                 </View>
                 <Text className="text-white text-xs">Top Up</Text>
               </View>
-              <View className="h-16 w-16 flex items-center justify-center">
+              <View className="h-16 w-1/4 flex items-center justify-center">
                 <View className="w-8 h-8 m-1">
                   <Image
                     className="w-8 h-8"
@@ -88,10 +88,89 @@ const App: () => React$Node = () => {
               </View>
             </View>
           </View>
+
+        {/* main feature */}
+        <View className="flex flex-row mb-4">
+          <View className="h-16 w-1/4 flex items-center justify-center">
+            <View className="w-8 h-8 m-1">
+              <Image
+                  className="w-8 h-8"
+                  source={require(`./icons/go-ride.png`)}
+              />
+            </View>
+            <Text className="text-black text-xs">GO RIDE</Text>
+          </View>
+          <View className="h-16 w-1/4 flex items-center justify-center">
+            <View className="w-8 h-8 m-1">
+              <Image
+                  className="w-8 h-8"
+                  source={require(`./icons/go-car.png`)}
+              />
+            </View>
+            <Text className="text-black text-xs">GO CAR</Text>
+          </View>
+          <View className="h-16 w-1/4 flex items-center justify-center">
+            <View className="w-8 h-8 m-1">
+              <Image
+                  className="w-8 h-8"
+                  source={require(`./icons/go-bluebird.png`)}
+              />
+            </View>
+            <Text className="text-black text-xs">GO BLUEBIRD</Text>
+          </View>
+          <View className="h-16 w-1/4 flex items-center justify-center">
+            <View className="w-8 h-8 m-1">
+              <Image
+                  className="w-8 h-8"
+                  source={require(`./icons/go-send.png`)}
+              />
+            </View>
+            <Text className="text-black text-xs">GO SEND</Text>
+          </View>
+        </View>
+          <View className="flex flex-row flex-wrap justify-between">
+            <View className="h-16 w-1/4 flex items-center justify-center">
+              <View className="w-8 h-8 m-1">
+                <Image
+                    className="w-8 h-8"
+                    source={require(`./icons/go-deals.png`)}
+                />
+              </View>
+              <Text className="text-black text-xs">GO DEALS</Text>
+            </View>
+            <View className="h-16 w-1/4 flex items-center justify-center">
+              <View className="w-8 h-8 m-1">
+                <Image
+                    className="w-8 h-8"
+                    source={require(`./icons/go-pulsa.png`)}
+                />
+              </View>
+              <Text className="text-black text-xs">GO PULSA</Text>
+            </View>
+            <View className="h-16 w-1/4 flex items-center justify-center">
+              <View className="w-8 h-8 m-1">
+                <Image
+                    className="w-8 h-8"
+                    source={require(`./icons/go-food.png`)}
+                />
+              </View>
+              <Text className="text-black text-xs">GO FOOD</Text>
+            </View>
+            <View className="h-16 w-1/4 flex items-center justify-center">
+              <View className="w-8 h-8 m-1">
+                <Image
+                    className="w-8 h-8"
+                    source={require(`./icons/go-more.png`)}
+                />
+              </View>
+              <Text className="text-black text-xs">MORE</Text>
+            </View>
+          </View>
+
         </View>
         {/* bottom navigation */}
-        <View className="h-16 bg-white flex flex-row justify-around">
-          <View className="h-16 w-16 flex items-center justify-center">
+        <View className="h-16 bg-white flex flex-row">
+          <View className="h-16 w-1/5 flex items-center justify-center">
             <View className="w-8 h-8 m-1">
               <Image
                 className="w-8 h-8"
@@ -100,7 +179,7 @@ const App: () => React$Node = () => {
             </View>
             <Text className="text-gray-600 text-xs">Home</Text>
           </View>
-          <View className="h-16 w-16 flex items-center justify-center">
+          <View className="h-16 w-1/5 flex items-center justify-center">
             <View className="w-8 h-8 m-1">
               <Image
                 className="w-8 h-8"
@@ -109,13 +188,13 @@ const App: () => React$Node = () => {
             </View>
             <Text className="text-gray-700 text-xs">Orders</Text>
           </View>
-          <View className="h-16 w-16 flex items-center justify-center">
+          <View className="h-16 w-1/5 flex items-center justify-center">
             <View className="w-8 h-8 m-1">
               <Image className="w-8 h-8" source={require('./icons/help.png')} />
             </View>
             <Text className="text-gray-700 text-xs">Help</Text>
           </View>
-          <View className="h-16 w-16 flex items-center justify-center relative">
+          <View className="h-16 w-1/5 flex items-center justify-center relative">
             <View className="w-8 h-8 m-1">
               <Image
                 className="w-8 h-8"
@@ -123,11 +202,11 @@ const App: () => React$Node = () => {
               />
             </View>
             <Text className="text-gray-700 text-xs">Inbox</Text>
-            <View className="rounded-full h-6 w-6 flex items-center justify-center bg-red-500 absolute right-0 top-0">
+            <View className="rounded-full h-6 w-6 flex items-center justify-center bg-red-500 absolute right-0 top-0 mr-4 mt-0">
               <Text className="text-white text-xs">1</Text>
             </View>
           </View>
-          <View className="h-16 w-16 flex items-center justify-center">
+          <View className="h-16 w-1/5 flex items-center justify-center">
             <View className="w-8 h-8 m-1">
               <Image
                 className="w-8 h-8"
